@@ -23,7 +23,12 @@ app.use(cookieParser());
 
 import userRouter from "./routes/user.routes.js";
 
+//by chat gpt below code
+
 app.use("/api/v1/users", userRouter);
+app.get("/", (req, res) => {
+    res.send("Server is working");
+});
 
 export { app };
 
