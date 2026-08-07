@@ -28,7 +28,8 @@
     "mongoose": "^9.8.0",
     "mongoose-aggregate-paginate": "^2.0.2",
     "mongoose-aggregate-paginate-v2": "^1.1.4",
-    "multer": "^2.2.0"
+    "multer": "^2.2.0",
+    "postman-cli": "^1.45.0"
   },
   "allowScripts": {
     "bcrypt@6.0.0": true

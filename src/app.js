@@ -21,14 +21,13 @@ app.use(express.urlencoded({
 app.use(express.static("public"));
 app.use(cookieParser());
 
+//Routes import 
+
 import userRouter from "./routes/user.routes.js";
+// routs declaration
+app.use("/api/v1/users",userRouter);
 
-//by chat gpt below code
 
-app.use("/api/v1/users", userRouter);
-app.get("/", (req, res) => {
-    res.send("Server is working");
-});
 
 export { app };
 
